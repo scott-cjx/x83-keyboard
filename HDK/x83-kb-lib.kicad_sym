@@ -759,7 +759,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "A"
@@ -777,7 +777,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at 7.62 0 180)
 				(length 2.54)
 				(name "A"
@@ -795,10 +795,115 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin output line
 				(at -2.54 -7.62 90)
 				(length 2.54)
 				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "HS/S-keyswitch_1"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 6.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "HS/S-keyswitch_1_1_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "HS/S"
+				(at -0.254 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin output line
+				(at 2.54 -10.16 90)
+				(length 5.08)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -2.54 -7.62 90)
+				(length 2.54)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -995,10 +1100,10 @@
 					(type background)
 				)
 			)
-			(pin bidirectional line
-				(at -7.62 0 0)
-				(length 2.54)
-				(name "A"
+			(pin output line
+				(at 2.54 -10.16 90)
+				(length 5.08)
+				(name "B"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1013,10 +1118,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -2.54 -7.62 90)
 				(length 2.54)
-				(name "B"
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)

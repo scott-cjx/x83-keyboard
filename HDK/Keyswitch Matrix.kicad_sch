@@ -270,7 +270,7 @@
 				)
 			)
 		)
-		(symbol "x83-kb-lib:HS/S-keyswitch_1"
+		(symbol "x83-kb-lib:Keyswitch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -317,7 +317,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "HS/S-keyswitch_1_1_1"
+			(symbol "Keyswitch_1_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -7174,7 +7174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 209.55 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7243,7 +7243,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 190.5 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7399,7 +7399,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 247.65 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7468,7 +7468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 171.45 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7798,7 +7798,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 114.3 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7867,7 +7867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 190.5 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7936,7 +7936,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 209.55 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8092,7 +8092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 133.35 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8161,7 +8161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 95.25 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8230,7 +8230,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8299,7 +8299,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 114.3 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8455,7 +8455,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8524,7 +8524,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8941,7 +8941,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 95.25 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9010,7 +9010,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9079,7 +9079,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 171.45 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9148,7 +9148,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9304,7 +9304,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9547,7 +9547,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9616,7 +9616,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 266.7 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9927,7 +9927,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9996,7 +9996,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10326,7 +10326,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10482,7 +10482,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10551,7 +10551,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 133.35 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10707,7 +10707,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10863,7 +10863,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 190.5 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11019,7 +11019,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 114.3 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11088,7 +11088,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11244,7 +11244,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 95.25 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11313,7 +11313,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11961,7 +11961,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 266.7 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12117,7 +12117,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 304.8 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12447,7 +12447,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 171.45 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12516,7 +12516,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 171.45 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12585,7 +12585,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 171.45 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12915,7 +12915,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 323.85 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12984,7 +12984,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13314,7 +13314,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 209.55 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13818,7 +13818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 323.85 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13974,7 +13974,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14043,7 +14043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 133.35 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14112,7 +14112,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 133.35 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14336,7 +14336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 209.55 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14405,7 +14405,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 304.8 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14474,7 +14474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14543,7 +14543,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 190.5 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14699,7 +14699,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14768,7 +14768,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 266.7 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15011,7 +15011,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15167,7 +15167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15497,7 +15497,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16077,7 +16077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 38.1 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16320,7 +16320,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16650,7 +16650,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16806,7 +16806,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16875,7 +16875,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 266.7 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17118,7 +17118,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 247.65 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17361,7 +17361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17430,7 +17430,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 133.35 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17499,7 +17499,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 95.25 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17568,7 +17568,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17637,7 +17637,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17706,7 +17706,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 247.65 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17862,7 +17862,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 114.3 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18018,7 +18018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18348,7 +18348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18417,7 +18417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 209.55 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18573,7 +18573,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18642,7 +18642,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 95.25 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18711,7 +18711,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 152.4 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18867,7 +18867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 57.15 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19110,7 +19110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 266.7 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19179,7 +19179,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 228.6 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19335,7 +19335,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 247.65 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19567,7 +19567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 285.75 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19723,7 +19723,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 190.5 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19879,7 +19879,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 114.3 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19948,7 +19948,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 76.2 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20104,7 +20104,7 @@
 		)
 	)
 	(symbol
-		(lib_id "x83-kb-lib:HS/S-keyswitch_1")
+		(lib_id "x83-kb-lib:Keyswitch")
 		(at 247.65 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)

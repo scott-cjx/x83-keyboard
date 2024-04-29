@@ -11,7 +11,103 @@
 		(company "Scott CJX")
 	)
 	(lib_symbols
-		(symbol "Device:D"
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "x83-kb-lib:D"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
@@ -174,103 +270,7 @@
 				)
 			)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "sckb-parts:HS/S-keyswitch"
+		(symbol "x83-kb-lib:HS/S-keyswitch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -393,7 +393,7 @@
 				)
 			)
 		)
-		(symbol "sckb-parts:S-Keyswitch/ Rotary Encoder"
+		(symbol "x83-kb-lib:S-Keyswitch/ Rotary Encoder"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5722,8 +5722,7 @@
 		(uuid "fd520904-4a81-46c8-857a-3c210e6bcb0a")
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5747,7 +5746,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 78.994 0)
 			(effects
 				(font
@@ -5793,8 +5792,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 85.09 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5818,7 +5816,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 85.09 98.044 0)
 			(effects
 				(font
@@ -5864,7 +5862,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -6019,8 +6017,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 85.09 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6044,7 +6041,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 85.09 40.894 0)
 			(effects
 				(font
@@ -6090,7 +6087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -6177,7 +6174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -6264,7 +6261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -6351,7 +6348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 177.8 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -6438,8 +6435,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6463,7 +6459,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 78.994 0)
 			(effects
 				(font
@@ -6509,8 +6505,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6534,7 +6529,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 78.994 0)
 			(effects
 				(font
@@ -6580,8 +6575,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 102.87 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6605,7 +6599,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 102.87 98.044 0)
 			(effects
 				(font
@@ -6651,8 +6645,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 173.99 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6676,7 +6669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 173.99 59.944 0)
 			(effects
 				(font
@@ -6722,7 +6715,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -6809,8 +6802,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 173.99 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6834,7 +6826,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 173.99 21.844 0)
 			(effects
 				(font
@@ -6880,7 +6872,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 302.26 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -6967,7 +6959,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -7054,7 +7046,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 71.12 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -7141,8 +7133,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 67.31 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7166,7 +7157,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 67.31 117.094 0)
 			(effects
 				(font
@@ -7212,8 +7203,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7237,7 +7227,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 40.894 0)
 			(effects
 				(font
@@ -7283,7 +7273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -7370,8 +7360,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7395,7 +7384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 59.944 0)
 			(effects
 				(font
@@ -7441,7 +7430,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -7528,7 +7517,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -7615,7 +7604,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 248.92 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -7702,7 +7691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 195.58 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -7857,7 +7846,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 284.48 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -7944,8 +7933,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 245.11 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7969,7 +7957,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 245.11 59.944 0)
 			(effects
 				(font
@@ -8015,7 +8003,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 248.92 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -8102,7 +8090,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 248.92 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -8189,7 +8177,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 160.02 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -8276,7 +8264,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -8363,7 +8351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 195.58 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -8450,7 +8438,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -8537,8 +8525,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 85.09 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8562,7 +8549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 85.09 21.844 0)
 			(effects
 				(font
@@ -8608,7 +8595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 88.9 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -8695,7 +8682,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -8782,7 +8769,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 71.12 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -8869,8 +8856,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8894,7 +8880,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 59.944 0)
 			(effects
 				(font
@@ -8940,8 +8926,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8965,7 +8950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 59.944 0)
 			(effects
 				(font
@@ -9011,8 +8996,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 280.67 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9036,7 +9020,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 280.67 98.044 0)
 			(effects
 				(font
@@ -9082,7 +9066,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 177.8 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -9169,8 +9153,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9194,7 +9177,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 117.094 0)
 			(effects
 				(font
@@ -9240,8 +9223,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 85.09 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9265,7 +9247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 85.09 59.944 0)
 			(effects
 				(font
@@ -9311,7 +9293,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -9398,7 +9380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sckb-parts:S-Keyswitch/ Rotary Encoder")
+		(lib_id "x83-kb-lib:S-Keyswitch/ Rotary Encoder")
 		(at 298.45 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9422,7 +9404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 298.45 59.944 0)
 			(effects
 				(font
@@ -9474,7 +9456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -9561,8 +9543,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 67.31 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9586,7 +9567,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 67.31 59.944 0)
 			(effects
 				(font
@@ -9632,8 +9613,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 67.31 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9657,7 +9637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 67.31 21.844 0)
 			(effects
 				(font
@@ -9703,7 +9683,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -9790,7 +9770,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 106.68 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -9877,8 +9857,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9902,7 +9881,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 21.844 0)
 			(effects
 				(font
@@ -9948,7 +9927,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 71.12 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -10035,8 +10014,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 191.77 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10060,7 +10038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 191.77 21.844 0)
 			(effects
 				(font
@@ -10106,8 +10084,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10131,7 +10108,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 98.044 0)
 			(effects
 				(font
@@ -10177,7 +10154,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 35.56 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -10264,8 +10241,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 156.21 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10289,7 +10265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 156.21 78.994 0)
 			(effects
 				(font
@@ -10335,8 +10311,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 31.75 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10360,7 +10335,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 31.75 117.094 0)
 			(effects
 				(font
@@ -10406,8 +10381,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10431,7 +10405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 59.944 0)
 			(effects
 				(font
@@ -10477,8 +10451,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10502,7 +10475,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 21.844 0)
 			(effects
 				(font
@@ -10548,8 +10521,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10573,7 +10545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 78.994 0)
 			(effects
 				(font
@@ -10619,7 +10591,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -10706,8 +10678,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 245.11 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10731,7 +10702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 245.11 21.844 0)
 			(effects
 				(font
@@ -10777,8 +10748,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 280.67 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10802,7 +10772,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 280.67 21.844 0)
 			(effects
 				(font
@@ -10848,8 +10818,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 102.87 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10873,7 +10842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 102.87 59.944 0)
 			(effects
 				(font
@@ -10919,7 +10888,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -11006,8 +10975,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11031,7 +10999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 21.844 0)
 			(effects
 				(font
@@ -11077,7 +11045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sckb-parts:S-Keyswitch/ Rotary Encoder")
+		(lib_id "x83-kb-lib:S-Keyswitch/ Rotary Encoder")
 		(at 298.45 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11101,7 +11069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 298.45 78.994 0)
 			(effects
 				(font
@@ -11153,7 +11121,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -11240,7 +11208,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 160.02 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -11327,7 +11295,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 177.8 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -11414,7 +11382,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 106.68 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -11501,7 +11469,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 35.56 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -11588,8 +11556,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 85.09 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11613,7 +11580,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 85.09 78.994 0)
 			(effects
 				(font
@@ -11659,7 +11626,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -11746,8 +11713,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11771,7 +11737,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 40.894 0)
 			(effects
 				(font
@@ -11817,8 +11783,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11842,7 +11807,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 117.094 0)
 			(effects
 				(font
@@ -11888,7 +11853,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 88.9 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -11975,7 +11940,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 106.68 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -12062,7 +12027,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 248.92 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -12149,7 +12114,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 35.56 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -12236,7 +12201,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 124.46 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -12323,8 +12288,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 298.45 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12348,7 +12312,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 298.45 117.094 0)
 			(effects
 				(font
@@ -12394,7 +12358,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 302.26 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -12481,8 +12445,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 102.87 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12506,7 +12469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 102.87 21.844 0)
 			(effects
 				(font
@@ -12552,8 +12515,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12577,7 +12539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 21.844 0)
 			(effects
 				(font
@@ -12623,8 +12585,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 120.65 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12648,7 +12609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 120.65 98.044 0)
 			(effects
 				(font
@@ -12694,8 +12655,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 120.65 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12719,7 +12679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 120.65 78.994 0)
 			(effects
 				(font
@@ -12765,7 +12725,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 195.58 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -12852,8 +12812,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 191.77 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12877,7 +12836,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 191.77 40.894 0)
 			(effects
 				(font
@@ -12923,8 +12882,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12948,7 +12906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 117.094 0)
 			(effects
 				(font
@@ -12994,8 +12952,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 156.21 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13019,7 +12976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 156.21 59.944 0)
 			(effects
 				(font
@@ -13065,7 +13022,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 142.24 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -13152,8 +13109,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13177,7 +13133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 98.044 0)
 			(effects
 				(font
@@ -13223,8 +13179,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 191.77 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13248,7 +13203,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 191.77 59.944 0)
 			(effects
 				(font
@@ -13294,7 +13249,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 248.92 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -13381,7 +13336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 106.68 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -13468,7 +13423,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -13555,8 +13510,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13580,7 +13534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 21.844 0)
 			(effects
 				(font
@@ -13626,8 +13580,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 31.75 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13651,7 +13604,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 31.75 78.994 0)
 			(effects
 				(font
@@ -13697,8 +13650,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 31.75 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13722,7 +13674,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 31.75 59.944 0)
 			(effects
 				(font
@@ -13768,7 +13720,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 195.58 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -13855,7 +13807,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -13942,8 +13894,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13967,7 +13918,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 59.944 0)
 			(effects
 				(font
@@ -14013,8 +13964,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 156.21 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14038,7 +13988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 156.21 98.044 0)
 			(effects
 				(font
@@ -14084,8 +14034,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14109,7 +14058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 40.894 0)
 			(effects
 				(font
@@ -14155,7 +14104,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 284.48 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -14242,8 +14191,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 31.75 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14267,7 +14215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 31.75 40.894 0)
 			(effects
 				(font
@@ -14313,7 +14261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -14400,7 +14348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 124.46 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -14487,7 +14435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 302.26 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -14574,8 +14522,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 173.99 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14599,7 +14546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 173.99 78.994 0)
 			(effects
 				(font
@@ -14645,7 +14592,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 213.36 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -14732,7 +14679,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 302.26 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -14819,8 +14766,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 298.45 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14844,7 +14790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 298.45 21.844 0)
 			(effects
 				(font
@@ -14890,8 +14836,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14915,7 +14860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 98.044 0)
 			(effects
 				(font
@@ -14961,8 +14906,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 245.11 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14986,7 +14930,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 245.11 98.044 0)
 			(effects
 				(font
@@ -15032,8 +14976,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 209.55 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15057,7 +15000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 209.55 40.894 0)
 			(effects
 				(font
@@ -15103,8 +15046,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 156.21 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15128,7 +15070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 156.21 40.894 0)
 			(effects
 				(font
@@ -15174,7 +15116,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -15261,7 +15203,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 160.02 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -15348,7 +15290,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 284.48 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -15435,8 +15377,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 191.77 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15460,7 +15401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 191.77 78.994 0)
 			(effects
 				(font
@@ -15506,8 +15447,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15531,7 +15471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 98.044 0)
 			(effects
 				(font
@@ -15577,7 +15517,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 177.8 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -15664,8 +15604,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 49.53 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15689,7 +15628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 49.53 117.094 0)
 			(effects
 				(font
@@ -15735,7 +15674,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -15822,8 +15761,8 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_name "x83-kb-lib:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 31.75 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15847,7 +15786,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 31.75 21.844 0)
 			(effects
 				(font
@@ -15893,7 +15832,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 160.02 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -15980,7 +15919,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 88.9 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -16067,7 +16006,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -16154,7 +16093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 231.14 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -16241,8 +16180,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 245.11 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16266,7 +16204,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 245.11 40.894 0)
 			(effects
 				(font
@@ -16312,8 +16250,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 227.33 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16337,7 +16274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 227.33 78.994 0)
 			(effects
 				(font
@@ -16383,7 +16320,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 302.26 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -16470,8 +16407,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 156.21 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16495,7 +16431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 156.21 21.844 0)
 			(effects
 				(font
@@ -16541,8 +16477,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 262.89 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16566,7 +16501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 262.89 117.094 0)
 			(effects
 				(font
@@ -16612,8 +16547,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 67.31 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16637,7 +16571,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 67.31 78.994 0)
 			(effects
 				(font
@@ -16683,7 +16617,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 53.34 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -16770,7 +16704,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 124.46 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -16857,8 +16791,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 67.31 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16882,7 +16815,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 67.31 40.894 0)
 			(effects
 				(font
@@ -16928,8 +16861,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 120.65 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16953,7 +16885,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 120.65 59.944 0)
 			(effects
 				(font
@@ -16999,7 +16931,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 177.8 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -17086,7 +17018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 35.56 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -17173,8 +17105,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17198,7 +17129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 98.044 0)
 			(effects
 				(font
@@ -17244,7 +17175,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 124.46 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -17331,7 +17262,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 71.12 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -17418,7 +17349,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 195.58 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -17505,7 +17436,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 266.7 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -17592,7 +17523,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 124.46 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -17679,7 +17610,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 160.02 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -17766,8 +17697,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 102.87 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17791,7 +17721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 102.87 40.894 0)
 			(effects
 				(font
@@ -17837,8 +17767,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 120.65 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17862,7 +17791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 120.65 21.844 0)
 			(effects
 				(font
@@ -17908,7 +17837,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 71.12 132.08 0)
 		(mirror y)
 		(unit 1)
@@ -17995,7 +17924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sckb-parts:S-Keyswitch/ Rotary Encoder")
+		(lib_id "x83-kb-lib:S-Keyswitch/ Rotary Encoder")
 		(at 298.45 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18019,7 +17948,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 298.45 40.894 0)
 			(effects
 				(font
@@ -18071,7 +18000,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 88.9 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -18158,8 +18087,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 191.77 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18183,7 +18111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 191.77 98.044 0)
 			(effects
 				(font
@@ -18229,8 +18157,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 173.99 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18254,7 +18181,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 173.99 98.044 0)
 			(effects
 				(font
@@ -18368,8 +18295,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 173.99 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18393,7 +18319,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 173.99 40.894 0)
 			(effects
 				(font
@@ -18439,7 +18365,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 35.56 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -18526,7 +18452,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 106.68 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -18613,8 +18539,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 280.67 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18638,7 +18563,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 280.67 117.094 0)
 			(effects
 				(font
@@ -18684,8 +18609,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 138.43 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18709,7 +18633,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 138.43 40.894 0)
 			(effects
 				(font
@@ -18755,8 +18679,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 120.65 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18780,7 +18703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 120.65 40.894 0)
 			(effects
 				(font
@@ -18826,8 +18749,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 102.87 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18851,7 +18773,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 102.87 78.994 0)
 			(effects
 				(font
@@ -18897,7 +18819,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "x83-kb-lib:D")
 		(at 88.9 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -18984,8 +18906,7 @@
 		)
 	)
 	(symbol
-		(lib_name "sckb-parts:HS/S-keyswitch")
-		(lib_id "sckb-parts:HS/S-keyswitch")
+		(lib_id "x83-kb-lib:HS/S-keyswitch")
 		(at 245.11 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19009,7 +18930,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sckb-footprint:Optional Hotswap MX 1.00U"
+		(property "Footprint" "x83-kb-lib:SW_OPT_MX"
 			(at 245.11 117.094 0)
 			(effects
 				(font
